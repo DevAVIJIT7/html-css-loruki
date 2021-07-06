@@ -112,6 +112,21 @@ img {
 .showcase-from input:focus {
     outline: none;
 }
+
+.showcase::before,
+.showcase::after {
+    content: '';
+    height: 100px;
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: #fff;
+    transform: skewY(-2deg);
+    -webkit-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+}
 /* Utility */
 
 .container {
