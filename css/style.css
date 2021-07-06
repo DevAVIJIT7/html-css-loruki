@@ -81,8 +81,36 @@ img {
 }
 
 .showcase .grid {
+    overflow: visible;
     grid-template-columns: 55% 45%;
     gap: 30px;
+}
+
+.showcase-from {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+}
+
+.showcase-from .form-control {
+    margin: 30px 0;
+}
+
+.showcase-from input[type='text'],
+.showcase-from input[type='email'] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.showcase-from input:focus {
+    outline: none;
 }
 /* Utility */
 
@@ -93,6 +121,33 @@ img {
     padding: 0 40px;
 }
 
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    padding: 10px 30px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
 
 .flex {
     display: flex;
